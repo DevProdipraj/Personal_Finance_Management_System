@@ -44,7 +44,7 @@ body {
   color: white;
 }
 .brandicon{
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 .registationForm h1{
@@ -74,7 +74,8 @@ body {
     font-size: 18px;
     color: gray;
  }
-.userSignUpBtn{
+.userSignUpBtn,
+.userLoginBtn{
     background-color: var(--secondary-color) !important;
     border-radius: 50px !important;
     border: none !important;
@@ -95,13 +96,23 @@ body {
     margin-left: 5px;
 }
 
-
-
-
-
-
-
-
 .registationPagebanner {
   width: 70%;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.registationPagebanner img {
+  margin-top: 4rem;
+}
+.userLoginBtn{
+  position: absolute;
+  right: 5rem;
+  top: 2rem;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.userLoginBtn:hover{
+  background-color: #3535ee !important;
+  transition: 0.3s all ease-in-out;
 }
