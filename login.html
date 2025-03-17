@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css files  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- main section start  -->
+    <main>
+        <!-- header section Start -->
+        <section class="container">
+            <div class="loginPageHeader textCenter">
+                <div class="">
+                    <a href="/">
+                        <img src="./assets/img/brandLogo.svg" alt="brandLogo">
+                    </a>
+                </div>
+                <div class="">
+                    <a href="/">
+                        <input class="userSignUpBtn loginPageSingUpBtn" type="submit" value="Sign Up" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- user loging section  -->
+        <section class="container">
+            <div class="loginFormWrappper textCenter">
+                <div class="userloginForm">
+                    <form get="" action="#">
+                        <div class="textCenter loginFormHeader">
+                            <div class="">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <h2>Login</h2>
+                        </div>
+                        <div class="loginForm textCenter ">
+                            <div class="loginFormInputBox">
+                                <i class="fa-solid fa-user"></i>
+                                <input required placeholder="Username" type="text" name="userName" id="userName">
+                            </div>
+                            <div class="loginFormInputBox">
+                                <i class="fa-solid fa-lock"></i>
+                                <input required placeholder="Password" type="password" name="userPassword" id="userPassword">
+                                <i onclick="togglePassword()"
+                                    class="fa-solid fa-eye toggle-password fa-eye custom_icon"></i>
+                            </div>
+                        </div>
+                        <div class="forgatePassBoxWrapper">
+                            <div class="  rememberMeBox">
+                                <input class="" type="checkbox" name="" id="">
+                                <span>Remember Me </span>
+                            </div>
+                            <div class="forgatePassBox">
+                                <a href="/forgatePassword.html">
+                                    Forgate Password?
+                                </a>
+                            </div>
+                        </div>
+                        <a class="textCenter" href="/login.html">
+                            <input class="loginBtn" type="submit" value="Login">
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS files link  -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
