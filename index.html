@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registation Page</title>
+    <!-- css file links  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- main section start  -->
+    <main>
+      <!-- registaion form start  -->
+      <section class="container">
+        <div class="textCenter registaionFormWrapper">
+          <!-- registaion form left  -->
+          <div class="registationForm">
+            <img
+              class="brandicon"
+              src="./assets/img/brandLogo.png"
+              alt="brandLogo"
+            />
+            <h1>Create an account</h1>
+            <h4>Let's get started!</h4>
+            <form class="userRegistationForm" method="post" action="#">
+              <div class=" ">
+                <label for="name">Name</label> <br>
+                <input placeholder="User Name" required type="text" name="name" id="name" />
+              </div>
+              <div class=" ">
+                <label for="email">Email</label> <br>
+                <input placeholder="User Email" required type="email" name="email" id="email" />
+              </div>
+              <div class=" ">
+                <label for="password">Password</label> <br>
+                <input placeholder="Password" required type="text" name="password" id="password" />
+              </div>
+              <input class="userSignUpBtn" type="submit" value="Sign Up" />
+            </form>
+            <div class="formQuestionBox flex">
+              <p>Already have an account?</p>
+              <a href="#" class="userLoginFromLink">Login</a>
+            </div>
+          </div>
+          <!-- registaion form right  -->
+          <div class="registationPagebanner">
+            <h1>World</h1>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- js files  -->
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>

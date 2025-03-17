@@ -1,0 +1,107 @@
+/* RESET CSS  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* custom style  */
+:root {
+  --primary-color: #1c1c3a;
+  --secondary-color: #4e4ee9;
+}
+.flex {
+  display: flex;
+}
+.textCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+/* add font familly  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Registation from Css Start  */
+body {
+  background-color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+}
+.registaionFormWrapper {
+  height: 100vh;
+ 
+}
+.registationForm {
+  width: 40%;
+  background-color: aliceblue;
+  height: 100%;
+  padding:10rem;
+  box-shadow: 10px 10px 40px rgb(0, 0, 0);
+  background: transparent;
+  color: white;
+}
+.brandicon{
+    width: 200px;
+    height: auto;
+}
+.registationForm h1{
+    margin-top: 3rem;
+    font-size: 30px;
+}
+
+.registationForm h4{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400 !important;
+}
+
+.userRegistationForm{
+    margin-top: 14px;
+}
+.userRegistationForm div{
+    margin-top: 16px;
+}
+.userRegistationForm input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 4px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid gray;
+    font-size: 18px;
+    color: gray;
+ }
+.userSignUpBtn{
+    background-color: var(--secondary-color) !important;
+    border-radius: 50px !important;
+    border: none !important;
+    cursor: pointer;
+    margin-top: 20px !important;
+    color: white !important;
+}
+.formQuestionBox{
+    margin-top: 1.5rem;
+}
+.formQuestionBox p{
+    color: gray;
+}
+.userLoginFromLink{
+    color: white;
+    border-bottom: 1px solid gary;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+.registationPagebanner {
+  width: 70%;
+}
