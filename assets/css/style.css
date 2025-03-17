@@ -44,7 +44,7 @@ body {
   width: 40%;
   background-color: aliceblue;
   height: 100%;
-  padding: 10rem;
+  padding: 1rem 10rem;
   box-shadow: 10px 10px 40px rgb(0, 0, 0);
   background: transparent;
   color: white;
@@ -53,6 +53,7 @@ body {
 .brandicon {
   width: 300px;
   height: auto;
+  margin-bottom: 9rem;
 }
 
 .registationForm h1 {
@@ -171,7 +172,7 @@ body {
 .loginFormHeader i {
   font-size: 35px;
   color: white;
-  border: 3px solid var(--primary-color);
+  border: 3px solid #a4a4cb;
   padding: 10px 15px;
   border-radius: 14px;
 }
