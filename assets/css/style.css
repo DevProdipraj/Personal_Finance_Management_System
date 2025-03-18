@@ -13,6 +13,7 @@
 
 .flex {
   display: flex;
+
 }
 
 .textCenter {
@@ -42,7 +43,6 @@ body {
 
 .registationForm {
   width: 40%;
-  background-color: aliceblue;
   height: 100%;
   padding: 1rem 10rem;
   box-shadow: 10px 10px 40px rgb(0, 0, 0);
@@ -126,8 +126,11 @@ body {
   position: absolute;
   right: 5rem;
   top: 2rem;
-  padding: 8px 20px;
-  font-size: 16px;
+  padding: 9px 30px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .userLoginBtn:hover {
@@ -142,8 +145,8 @@ body {
 }
 
 .loginPageSingUpBtn {
-  padding: 8px 20px;
-  font-size: 16px;
+  padding: 9px 25px;
+  font-size: 20px;
   margin-top: 0 !important;
 }
 
@@ -160,9 +163,9 @@ body {
 .userloginForm {
   padding: 2rem;
   width: 500px;
-  background-color: var(--secondary-color);
-  box-shadow: -2px 0px 30px #5e5d5d;
-  border-radius: 10px;
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 30px #000000;
+  border: 20px solid var(--secondary-color);
 }
 
 .loginFormHeader {
@@ -203,6 +206,8 @@ body {
   border-radius: 5px;
   padding: 2px 10px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .loginForm i {
@@ -232,7 +237,7 @@ body {
   color: white;
 }
 .loginBtn{
-  background-color: var(--primary-color) !important;
+  background-color: var(--secondary-color) !important;
   border-radius: 50px;
   border: none;
   cursor: pointer;
@@ -240,8 +245,114 @@ body {
   padding: 10px 40px;
   color: white;
   font-size: 18px;
+  text-decoration:none !important;
 }
 .loginBtn:hover{
   background-color: #3c3c58 !important;
   transition: 0.3s all ease-in-out;
+}
+.userLoginBtn input{
+  background-color: transparent;
+   border: none;
+   outline: none;
+}
+.rightArrow{
+  border: none;
+  outline: none;
+}
+
+/* reset password page CSS start  */
+.emailIcon,
+.lockIcon{
+  font-size: 25px !important;
+}
+
+/* dash bord CSS start  */
+.userDashBordWrapper{
+  padding: 2rem 6rem;
+}
+.userDashBordHeader{
+  justify-content: space-between;
+}
+.userDashBordHeader h2{
+  color: white;
+}
+.logoutBox{
+  background-color: var(--secondary-color);
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.logoutBox button{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.logOutIcon{
+  color: white;
+  font-size: 22px;
+}
+.transactionForm{
+  padding: 2rem;
+  color: white;
+  width: 500px;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 0px 30px #000000;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.transactionForm input,
+.transActionType
+{
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  width: 100%;
+  padding: 12px 5px;
+  font-size: 18px;
+  color: white;
+  margin: 8px 0px;
+  border-radius: 10px;
+}
+.transactionForm  input::placeholder{
+  color: #ffffff8f;
+}
+.transActionType option{
+  background-color: var(--primary-color);
+}
+.transActionType option:hover{
+  background-color: var(--secondary-color);
+}
+.makeTransactionBtn{
+  cursor: pointer;
+ 
+}
+.makeTransactionBtn:hover{
+ background-color: rgba(255, 255, 255, 0.192);
+ color: black;
+ transition: 0.4s all ease-in-out;
+}
+.transactionDetailsWrapper{
+  justify-content: space-between;
+  margin-top: 6rem;
+  box-shadow: 1px 1px 20px #111;
+  padding: 2rem;
+  gap: 2;
+  align-items: start;
+}
+.dataTable{
+  width: 100% !important;
+  margin-right: 2rem;
+  padding: 0 2rem;
+}
+.dataTable{
+  width: 30%;
+}
+.dt-search label{
+  color: white;
 }
