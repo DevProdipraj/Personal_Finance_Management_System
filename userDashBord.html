@@ -12,8 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.css">
 
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -36,24 +36,27 @@
 
         <!-- user income expense saving  input form HTML  -->
         <section>
-            <div class="textCenter">
-                <form class="transactionForm " method="post" action="#">
-                    <div class=" ">
-                        <input placeholder="Salery,House Rent, etc" required type="text" name="" id="" />
-                    </div>
-                    <div class=" ">
-                        <select class="transActionType" name="" id="">
-                            <option value="Income">Select Transaction Type</option>
-                            <option value="Income">Income</option>
-                            <option value="Expense">Expense</option>
-                            <option value="Saving">Saving</option>
-                        </select>
-                    </div>
-                    <div class=" ">
-                        <input placeholder="Enter Amount" type="text" name="amount" id="">
-                    </div>
-                    <input class="makeTransactionBtn" type="submit" value="Make Transaction" />
-                </form>
+            <div class="textCenter wrapper">
+                <div class="textCenter">
+                    <form class="transactionForm " method="post" action="#">
+                        <div class=" ">
+                            <input placeholder="Salery,House Rent, etc" required type="text" name="" id="" />
+                        </div>
+                        <div class=" ">
+                            <select class="transActionType" name="" id="">
+                                <option value="Income">Select Transaction Type</option>
+                                <option value="Income">Income</option>
+                                <option value="Expense">Expense</option>
+                                <option value="Saving">Saving</option>
+                            </select>
+                        </div>
+                        <div class=" ">
+                            <input placeholder="Enter Amount" type="text" name="amount" id="">
+                        </div>
+                        <input class="makeTransactionBtn" type="submit" value="Make Transaction" />
+                    </form>
+                </div>
+                <div id="pieChart" class="pieChart"></div>
             </div>
         </section>
         <!-- transaction details show HTML start  -->
@@ -484,7 +487,7 @@
                         </table>
                     </div>
                 </div>
-                <div id="pieChart" class="pieChart"></div>
+
             </div>
         </section>
     </main>
