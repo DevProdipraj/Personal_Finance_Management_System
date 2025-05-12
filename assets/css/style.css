@@ -13,7 +13,6 @@
 
 .flex {
   display: flex;
-
 }
 
 .textCenter {
@@ -28,7 +27,7 @@
 }
 
 /* add font familly  */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Registation from Css Start  */
 body {
@@ -38,7 +37,6 @@ body {
 
 .registaionFormWrapper {
   height: 100vh;
-
 }
 
 .registationForm {
@@ -218,25 +216,25 @@ body {
   position: absolute;
   right: 5%;
   top: 38%;
-} 
-.forgatePassBoxWrapper{
+}
+.forgatePassBoxWrapper {
   display: flex;
   align-items: center;
   margin-top: 2rem;
   padding: 0rem 1.2rem;
   justify-content: space-between;
 }
-.rememberMeBox input{
+.rememberMeBox input {
   width: 20px;
   margin-top: 5px;
 }
-.rememberMeBox span{
+.rememberMeBox span {
   color: white;
 }
-.forgatePassBox a{
+.forgatePassBox a {
   color: white;
 }
-.loginBtn{
+.loginBtn {
   background-color: var(--secondary-color) !important;
   border-radius: 50px;
   border: none;
@@ -245,45 +243,45 @@ body {
   padding: 10px 40px;
   color: white;
   font-size: 18px;
-  text-decoration:none !important;
+  text-decoration: none !important;
 }
-.loginBtn:hover{
+.loginBtn:hover {
   background-color: #3c3c58 !important;
   transition: 0.3s all ease-in-out;
 }
-.userLoginBtn input{
+.userLoginBtn input {
   background-color: transparent;
-   border: none;
-   outline: none;
+  border: none;
+  outline: none;
 }
-.rightArrow{
+.rightArrow {
   border: none;
   outline: none;
 }
 
 /* reset password page CSS start  */
 .emailIcon,
-.lockIcon{
+.lockIcon {
   font-size: 25px !important;
 }
 
 /* dash bord CSS start  */
-.userDashBordWrapper{
+.userDashBordWrapper {
   padding: 2rem 6rem;
 }
-.userDashBordHeader{
+.userDashBordHeader {
   justify-content: space-between;
 }
-.userDashBordHeader h2{
+.userDashBordHeader h2 {
   color: white;
 }
-.logoutBox{
+.logoutBox {
   background-color: var(--secondary-color);
   padding: 10px 12px;
   border-radius: 8px;
   cursor: pointer;
 }
-.logoutBox button{
+.logoutBox button {
   background-color: transparent;
   border: none;
   outline: none;
@@ -293,18 +291,18 @@ body {
   margin-right: 8px;
   cursor: pointer;
 }
-.logOutIcon{
+.logOutIcon {
   color: white;
   font-size: 22px;
 }
-.wrapper{
+.wrapper {
   justify-content: space-evenly;
   margin-top: 10rem;
 }
-.pieChart{
+.pieChart {
   margin-top: 1rem;
 }
-.transactionForm{
+.transactionForm {
   padding: 3rem 2rem;
   color: white;
   width: 500px;
@@ -314,8 +312,7 @@ body {
   margin-top: 1rem;
 }
 .transactionForm input,
-.transActionType
-{
+.transActionType {
   background: transparent;
   border: 1px solid white;
   outline: none;
@@ -326,25 +323,24 @@ body {
   margin: 8px 0px;
   border-radius: 10px;
 }
-.transactionForm  input::placeholder{
+.transactionForm input::placeholder {
   color: #ffffff8f;
 }
-.transActionType option{
+.transActionType option {
   background-color: var(--primary-color);
 }
-.transActionType option:hover{
+.transActionType option:hover {
   background-color: var(--secondary-color);
 }
-.makeTransactionBtn{
+.makeTransactionBtn {
   cursor: pointer;
- 
 }
-.makeTransactionBtn:hover{
- background-color: rgba(255, 255, 255, 0.192);
- color: black;
- transition: 0.4s all ease-in-out;
+.makeTransactionBtn:hover {
+  background-color: rgba(255, 255, 255, 0.192);
+  color: black;
+  transition: 0.4s all ease-in-out;
 }
-.transactionDetailsWrapper{
+.transactionDetailsWrapper {
   justify-content: space-between;
   margin-top: 6rem;
   box-shadow: 1px 1px 20px #111;
@@ -352,16 +348,93 @@ body {
   gap: 2;
   align-items: start;
 }
-.dataTable{
+.dataTable {
   width: 100% !important;
   margin-right: 2rem;
   padding: 0 2rem;
 }
- 
-.dt-search label{
+
+.dt-search label {
   color: white;
 }
 
-table.dataTable th.dt-type-numeric, table.dataTable th.dt-type-date, table.dataTable td.dt-type-numeric, table.dataTable td.dt-type-date {
+table.dataTable th.dt-type-numeric,
+table.dataTable th.dt-type-date,
+table.dataTable td.dt-type-numeric,
+table.dataTable td.dt-type-date {
   text-align: left;
 }
+
+/* Responsibe design start (Max-width:600px) */
+@media only screen and (max-width: 768px) {
+  .registaionFormWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .registationForm {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    box-shadow: none;
+    background: transparent;
+    color: white;
+  }
+  .registationPagebanner {
+    display: none;
+  }
+  .brandicon {
+    width: 250px;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  .mobileUserLoginBtn {
+    display: none;
+  }
+}
+
+/* Responsibe design start (Max-width:1020px)  */
+ @media only screen and (min-width: 600px) {
+  .headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brandicon {
+    margin-bottom: 0rem;
+  }
+  .headerWrapper {
+    margin-top: 1.5rem;
+  }
+  .registationForm {
+    padding: 1rem 2.5rem;
+  }
+  .registationForm h1 {
+    margin-top: 10rem;
+  }
+  .mobileUserLoginBtn {
+    display: block;
+    background-color: var(--secondary-color) !important;
+    border-radius: 50px !important;
+    border: none !important;
+    cursor: pointer;
+    margin-top: 20px !important;
+    color: white !important;
+    padding: 9px 30px;
+    font-size: 22px;
+  }
+} 
+
+
+/* Responsibe design start (min-width:768 Max-width:1020px)  */
+@media only screen and (min-width: 769px) and (max-width: 1020px) {
+  .mobileUserLoginBtn {
+    display: none;
+  }
+  .mobileUserLoginBtn {
+    display: none !important  ;
+  }
+}  
+
+
+
+ 
