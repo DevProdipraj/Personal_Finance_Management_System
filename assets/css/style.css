@@ -426,7 +426,7 @@ table.dataTable td.dt-type-date {
 
 
 /* Responsibe design start (min-width:768 Max-width:1020px)  */
-@media only screen and (min-width: 769px) and (max-width: 1020px) {
+@media only screen and (min-width: 769px){
   .mobileUserLoginBtn {
     display: none;
   }
