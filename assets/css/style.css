@@ -118,6 +118,7 @@ body {
 
 .registationPagebanner img {
   margin-top: 4rem;
+  width: 100%;
 }
 
 .userLoginBtn {
@@ -365,35 +366,8 @@ table.dataTable td.dt-type-date {
   text-align: left;
 }
 
-/* Responsibe design start (Max-width:600px) */
-@media only screen and (max-width: 768px) {
-  .registaionFormWrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .registationForm {
-    width: 100%;
-    height: 100%;
-    padding: 1rem 1.5rem;
-    box-shadow: none;
-    background: transparent;
-    color: white;
-  }
-  .registationPagebanner {
-    display: none;
-  }
-  .brandicon {
-    width: 250px;
-    height: auto;
-    margin-bottom: 5rem;
-  }
-  .mobileUserLoginBtn {
-    display: none;
-  }
-}
-
-/* Responsibe design start (Max-width:1020px)  */
- @media only screen and (min-width: 600px) {
+/* Responsibe design start (min-width:600px)  */
+@media only screen and (min-width: 600px) {
   .headerWrapper {
     display: flex;
     align-items: center;
@@ -422,19 +396,103 @@ table.dataTable td.dt-type-date {
     padding: 9px 30px;
     font-size: 22px;
   }
-} 
+}
 
-
-/* Responsibe design start (min-width:768 Max-width:1020px)  */
-@media only screen and (min-width: 769px){
+/* Responsibe design start (Max-width:768px) */
+@media only screen and (max-width: 767px) {
+  .registaionFormWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .registationForm {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    box-shadow: none;
+    background: transparent;
+    color: white;
+  }
+  .registationPagebanner {
+    display: none;
+  }
+  .brandicon {
+    width: 250px;
+    height: auto;
+    margin-bottom: 5rem;
+  }
   .mobileUserLoginBtn {
     display: none;
   }
+  /* sign up page css start  */
+  .loginPageSingUpBtn {
+    display: none;
+  }
+  .loginPageHeader {
+    padding: 0px 1rem;
+
+    margin-top: 1rem;
+  }
+  .userloginForm {
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--primary-color) #1c1c3a;
+    box-shadow: 0px 0px 10px #000000;
+    border: 4px solid var(--secondary-color);
+  }
+  .forgatePassBox a,
+  .rememberMeBox span  {
+    font-size: 12px;
+    gap: 2px;
+}
+.forgatePassBoxWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    padding: 0rem 0rem;
+    justify-content: space-between;
+}
+.loginForm input {
+    width: 85%;
+    padding: 7px 5px;
+    font-size: 16px;
+}
+
+}
+
+/* Responsibe design start (min-width:768)  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .mobileUserLoginBtn {
     display: none !important  ;
   }
-}  
 
+  .registationForm {
+    width: 60%;
+  }
 
+  .registationPagebanner {
+    width: 40%;
+  }
+  .registationPagebanner img {
+    display: none;
+  }
+}
 
- 
+/* Responsibe design start (min-width: 1024px) and (max-width:1025px)  */
+@media only screen and (min-width: 1024px) and (max-width: 1025px) {
+  .mobileUserLoginBtn {
+    display: none !important  ;
+  }
+
+  .registationPagebanner img {
+    margin-top: 50%;
+    width: 100%;
+  }
+}
+
+/* Responsibe design start (min-width:768)  */
+@media only screen and (min-width: 1024px) {
+  .mobileUserLoginBtn {
+    display: none !important  ;
+  }
+}
